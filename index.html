@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter | Arcade Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <header class="header">
+            <h1>🚀 SPACE SHOOTER</h1>
+            <p>Defend the galaxy. Destroy the enemies!</p>
+        </header>
+
+        <section class="hud">
+            <div class="stat">
+                <span class="label">SCORE</span>
+                <span id="score">0</span>
+            </div>
+            <div class="stat">
+                <span class="label">LIVES</span>
+                <span id="lives">3</span>
+            </div>
+            <div class="stat">
+                <span class="label">LEVEL</span>
+                <span id="level">1</span>
+            </div>
+        </section>
+
+        <div class="game-wrapper">
+            <canvas id="gameCanvas" width="800" height="550">
+                Your browser does not support HTML Canvas.
+            </canvas>
+
+            <div id="overlay" class="overlay">
+                <div class="overlay-content">
+                    <div class="rocket-icon">🚀</div>
+                    <h2 id="message">SPACE SHOOTER</h2>
+                    <p id="description">
+                        Pilot your spaceship and protect the galaxy.
+                    </p>
+                    <button id="startButton">START GAME</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="controls">
+            <p><kbd>←</kbd> <kbd>→</kbd> Move spaceship</p>
+            <p><kbd>SPACE</kbd> Shoot enemies</p>
+            <p><kbd>P</kbd> Pause game</p>
+        </section>
+
+        <footer>
+            <p>Space Shooter &bull; Digital Logic Game Project</p>
+        </footer>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
